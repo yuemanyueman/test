@@ -1,0 +1,26 @@
+.form-search input{
+    line-height: normal;
+    width: 260px;
+    height: 30px;
+    border-radius: 5px;
+
+}
+.form-search .btn-primary {
+    color: #fff;
+    background-color: #428bca;
+    border-color: #357ebd;
+    width: 74px;
+    height: 30px;
+}
+.btngrou button {
+    width: 73px;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 12px;
+}
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}

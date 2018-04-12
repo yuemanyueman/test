@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="__ADMINCSS__/base.css" />
+<link rel="stylesheet" href="__ADMINCSS__/info-reg.css" />
+<link href="__COMMON__/Ueditor/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="__COMMON__/Ueditor/third-party/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="__COMMON__/Ueditor/umeditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="__COMMON__/Ueditor/umeditor.min.js"></script>
+<script type="text/javascript" src="__COMMON__/Ueditor/lang/zh-cn/zh-cn.js"></script>
+
+<title>移动办公自动化系统</title>
+</head>
+
+<body>
+<div class="title"><h2>类别添加</h2></div>
+<form action="" method="post"  id="f" enctype='multipart/form-data'>
+<div class="main">
+	<p class="short-input ue-clear">
+    	<label>类别名称：</label>
+        <input name="c_name" type="text" placeholder="类别名称" />
+    </p>
+</div>
+<div class="btn ue-clear">
+	<a href="javascript:;" class="confirm" id='btnSubmit'>确定</a>
+</div>
+</form>
+</body>
+<script type="text/javascript" src="__ADMINJS__/common.js"></script>
+<script type="text/javascript" src="__ADMINJS__/WdatePicker.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#btnSubmit').bind('click',function(){
+		$('#f').submit();
+	});
+	
+	$('#btnReset').bind('click',function(){
+		$('form')[0].reset();
+	});
+	
+	var um = UM.getEditor('content', {
+		// 重定义Ueditor的根路径
+		UEDITOR_HOME_URL : '__COMMON__Ueditor',
+		// 指定文件上传的后台处理程序
+		imageUrl : "{:U('upfile')}",
+		// 指定文件上传后的保存路径
+		imagePath : '__ROOT__/Uploads/images/'
+	});
+});	
+
+$(".select-title").on("click",function(){
+	$(".select-list").toggle();
+	return false;
+});
+$(".select-list").on("click","li",function(){
+	var txt = $(this).text();
+	$(".select-title").find("span").text(txt);
+});
+
+showRemind('input[type=text], textarea','placeholder');
+</script>
+</html>

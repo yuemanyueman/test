@@ -1,0 +1,135 @@
+
+/*========== Reset ==========*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,img{ display:block; }
+div,p,span,a,ul,pre,table,sub,sup,form,footer,header{font-family:"Microsoft YaHei";}
+a{text-decoration:none;color:#000;}
+table{border-collapse:collapse;border-spacing:0}
+audio,canvas,video { display: inline-block;*display: inline;*zoom: 1;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;font-family:"Microsoft YaHei";}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
+input,textarea,select{*font-size:100%}
+
+/*========== global CSS ==========*/
+/*=== flaot ===*/
+.fl-l{float:left;}
+.fl-r{float:right;}
+.clearfix:after{content:"";display:block;clear:both;}
+
+.padding{
+    padding-bottom:100px;
+    padding-top: 10px;
+}
+.margin{
+    margin:3px;
+}
+.margin1{
+    margin:20px;
+}
+.mmr{
+    margin-right:50px;
+}
+.fontSize{
+    font-weight: 800;
+    font-size: 22px;
+}
+.fontSizep{
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 24px;
+}
+/*=== position ===*/
+.pos-r{position:relative;}
+.pos-a{position:absolute;}
+.pos-f{position:fixed;}
+.ps-t{top:0;}
+.ps-l{left:0;}
+.ps-b{bottom:0;}
+.ps-r{right:0;}
+
+/*=== text ===*/
+.cent{text-align:center;}
+
+/*=== other ===*/
+.mar-merge{
+    border-top:1px solid transparent;
+}
+.line {
+    border-right: 1px solid #eee;
+    margin-right: 16px;
+}
+.p-c-c-li{
+    list-style-type: square;
+}
+.url{
+    position:relative;
+    width:100%;
+    min-height: 770px;
+    top:-35px;
+    background-color: #ffffff;
+
+
+}
+
+/*=== title public css ===*/
+.mjot{
+    margin:0 auto;
+}
+.auto{
+    width: 1200px;
+    margin:0 auto;
+    height: auto;
+}
+.fontW{
+    text-align: center;
+    color: #349afb;
+    font-weight: 800;
+    font-size: 47px;
+}
+.active{
+    color: blue;
+    font-size: 14px;
+}
+.center{
+    text-align: center;
+}
+.public-title{
+    position:relative;
+    width:520px;
+    margin:0 auto 3px;
+    padding:39px 0 33px;
+
+}
+.public-title:after{
+    content:'';
+    position:absolute;
+    bottom:-3.5px;
+    left:50%;
+    width:52px;
+    height:7px;
+    margin-left:-26px;
+    background-color:#A7C31E;
+}
+.public-title>img{
+    width:50%;
+    margin:0 auto 17px;
+}
+
+@media screen and (max-width:1200px) and (min-width:900px){
+    .public-title{
+        width:461px;
+    }
+}
+@media screen and (max-width:899px){
+    .public-title{
+        width:70.085%;
+    }
+}
